@@ -1,9 +1,9 @@
 [project]
-name = "tdd-calc-project"
+name = "laba8"
 version = "0.1.0"
-description = ""
+description = "TDD Calculator Project"
 authors = [
-    {name = "MrSody71",email = "usmvid66780@gmail.com"}
+    {name = "MrSody71", email = "usmvid66780@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.9"
