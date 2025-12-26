@@ -4,13 +4,12 @@ version = "0.1.0"
 description = "TDD Calculator Project"
 authors = ["MrSody71 <usmvid66780@gmail.com>"]
 readme = "README.md"
+# Указываем Poetry, где искать твой код калькулятора
 packages = [{include = "calculator.py", from = "src"}]
 
 [tool.poetry.dependencies]
 python = ">=3.9"
 requests = "^2.32.5"
-
-[tool.poetry.group.dev.dependencies]
 pytest = "^8.0.0"
 
 [build-system]
