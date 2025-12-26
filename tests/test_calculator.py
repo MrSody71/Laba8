@@ -1,4 +1,4 @@
-from tdd_calc_project.src.calculator import add
+from calculator import add
 
 def test_add_simple():
     assert add(2, 3) == 5

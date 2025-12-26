@@ -22,8 +22,6 @@ jobs:
 
       - name: Install dependencies
         run: poetry install
-        working-directory: ./tdd_calc_project
 
       - name: Run tests with pytest
         run: poetry run pytest
-        working-directory: ./tdd_calc_project
