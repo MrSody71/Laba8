@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "laba8"
+name = "Laba8"
 version = "0.1.0"
 description = "TDD Calculator Project"
 authors = ["MrSody71 <usmvid66780@gmail.com>"]
