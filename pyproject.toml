@@ -1,5 +1,5 @@
 [project]
-name = "laba8"
+name = "Laba8"
 version = "0.1.0"
 description = "TDD Calculator Project"
 authors = [
@@ -13,6 +13,7 @@ dependencies = [
 
 [tool.poetry]
 packages = [{include = "calculator.py", from = "src"}]
+pytest = "^8.0.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
