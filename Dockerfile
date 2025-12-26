@@ -1,0 +1,20 @@
+FROM python:3.9-slim
+
+ENV POETRY_VERSION=1.8.2 \
+    POETRY_VIRTUALENVS_CREATE=false \
+    PYTHONPATH=/app/src
+
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+
+RUN curl -sSL https://install.python-poetry.org | python3 -
+ENV PATH="/root/.local/bin:$PATH"
+
+WORKDIR /app
+
+COPY pyproject.toml poetry.lock ./
+
+RUN poetry install --no-dev --no-interaction --no-ansi
+
+COPY src/ ./src/
+
+CMD ["python", "src/calculator.py"]
