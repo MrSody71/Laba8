@@ -4,7 +4,6 @@ version = "0.1.0"
 description = "TDD Calculator Project"
 authors = ["MrSody71 <usmvid66780@gmail.com>"]
 readme = "README.md"
-# Указываем Poetry, где искать твой код калькулятора
 packages = [{include = "calculator.py", from = "src"}]
 
 [tool.poetry.dependencies]
